@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style/main.css">
+        <script type="module">
+            import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@dytesdk/ui-kit/loader/index.es2017.js';
+            defineCustomElements();
+        </script>
+    </head>
+<body>
+    <div id="dyte-meeting-container">
+        <!-- defineCustomElements() from dyte-init.js allows us to utilize 
+            all dyte components as web components.
+            Checkout https://docs.dyte.io/docs/home/introduction for more! -->
+        <dyte-meeting 
+            id="my-meeting" 
+            class="dyte" 
+            show-setup-screen="true"
+        ></dyte-meeting>
+    </div>
+</body>
+<script src="https://cdn.dyte.in/core/dyte.js"></script>
+<script type="module" src="./scripts/dyte-init.js"></script>
+</html>
+

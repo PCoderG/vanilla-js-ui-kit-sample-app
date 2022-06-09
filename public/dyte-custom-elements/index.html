@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style/main.css">
+        <script type="module">
+            import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@dytesdk/ui-kit/loader/index.es2017.js';
+            defineCustomElements();
+        </script>
+    </head>
+<body>
+    <div id="loader">
+        Loading...
+    </div>
+    <div id="dyte-meeting-container">
+        <!-- defineCustomElements() from dyte-init.js allows us to utilize 
+            all dyte components as web components.
+            Checkout https://docs.dyte.io/docs/home/introduction for more! -->
+        <dyte-participant-audio class="dyte"></dyte-participant-audio>
+        <dyte-notifications class="dyte"></dyte-notifications>
+        <div id="header" class="display-flex">
+            <dyte-recording-indicator class="dyte"></dyte-recording-indicator>
+            <dyte-meeting-title class="dyte"></dyte-meeting-title>
+            <dyte-participant-count class="dyte"></dyte-participant-count>
+        </div>
+        <div id="stage-container">
+            <div id="logo">
+                <img src="../assets/images/dyte_logo_dark.svg" />
+            </div>
+            <div id="stage"></div>
+        </div>
+        <div id="control-bar" class="display-flex">
+            <dyte-camera-toggle class="dyte"></dyte-camera-toggle>
+            <dyte-mic-toggle class="dyte"></dyte-mic-toggle>
+            <dyte-screenshare-toggle class="dyte"></dyte-screenshare-toggle>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.dyte.in/core/dyte.js"></script>
+<script type="module" src="./scripts/dyte-init.js"></script>
+</html>
+

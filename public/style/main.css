@@ -1,0 +1,50 @@
+html, body {
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+    background-image: url('../assets/images/grid.svg');
+    background-repeat: repeat;
+    background-position: 50% 0%;
+    background-size: 48px 48px;
+      
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+
+.flex-child-33 {
+    width: 33.3%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 2.5vh 0;
+    margin: 0 5vw;
+    border: solid;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0;
+}
+
+.logo > img {
+    height: 5rem;
+    width: auto;
+}

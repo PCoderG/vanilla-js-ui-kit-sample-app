@@ -1,0 +1,69 @@
+:root {
+    --dyte-colors-background-1000: 127, 125, 156;
+    --dyte-colors-background-900: 127, 125, 156;
+    --dyte-colors-background-800: 127, 125, 156;
+    --dyte-colors-background-700: 127, 125, 156;
+    --dyte-colors-background-600: 127, 125, 156;
+}
+
+#dyte-meeting-container {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(var(--dyte-colors-background-1000, 0 0 0));
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    width: 10%;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 0;
+}
+
+#logo > img {
+    height: 5rem;
+    width: auto;
+}
+
+
+#stage-container {
+    flex-direction: row;
+    width: 80%;
+    background: #eee;
+    align-items: center;
+    justify-content: center;
+}
+
+#stage {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    height: 100%;
+
+    justify-content: space-evenly;
+
+}
+
+#control-bar {
+    width: 10%;
+    padding: 5% 1%;
+    flex-direction: column;
+    background: #ddd;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.display-flex {
+    display: flex;
+}
